@@ -19,6 +19,14 @@ def predict_class(input_values):
 
 # Main Streamlit app
 def main():
+    st.markdown("""
+        <a href="https://github.com/debjotyms/Intrusion-Detection-Streamlit-CSE484" style="text-decoration: none; display: inline-block; padding: 8px 16px; background-color: #FF4B4B; color: white; font-size: 16px; cursor: pointer; text-align: center; border: none; border-radius: 7px; transition: background-color 0.3s ease, transform 0.3s ease;" onmouseover="this.style.backgroundColor='#FF2B2B'; this.style.transform='scale(1.1)';" onmouseout="this.style.backgroundColor='#FF4B4B'; this.style.transform='scale(1.0)';">
+            Visit our GitHub Repo
+        </a>
+    """, unsafe_allow_html=True)
+    
+
+
     st.title('Network Intrusion Detection')
 
     # Text input box for comma-separated values
