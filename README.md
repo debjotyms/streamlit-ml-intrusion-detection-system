@@ -1,1 +1,1 @@
-# Intrusion-Detection-Streamlit-CSE484
+# CSE484-Streamlit-Intrusion-Detection
