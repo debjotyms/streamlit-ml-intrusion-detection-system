@@ -5,7 +5,6 @@
 ![Python](https://img.shields.io/badge/Python-3.8+-blue?style=flat-square&logo=python)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Latest-red?style=flat-square&logo=streamlit)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.2.2-orange?style=flat-square&logo=scikit-learn)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
 A machine learning-powered web application for real-time network intrusion detection. Built with Streamlit and Random Forest classifier.
 </div>
@@ -88,5 +87,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <div align="center">
-  <p>Star this repo if you found it helpful!</p>
+  <p>⭐ Star this repo if you found it helpful!</p>
 </div>
