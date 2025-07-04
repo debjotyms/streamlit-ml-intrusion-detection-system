@@ -158,3 +158,23 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+# Project-specific files to ignore
+# Old/backup model files (keep only the current working models)
+rf.sav
+target_encoder.sav
+
+# Debug/analysis files (temporary analysis scripts)
+analyze_defaults.py
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# VSCode settings (if not needed by team)
+.vscode/
