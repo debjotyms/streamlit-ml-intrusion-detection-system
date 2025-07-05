@@ -65,7 +65,7 @@ def main():
     st.markdown("<h1 style='text-align: center; color: #1f77b4;'>Network Intrusion Detection System</h1>", unsafe_allow_html=True)
     
     st.markdown("""
-    <div style="background-color: #f0f2f6; padding: 20px; border-radius: 10px; margin-bottom: 40px;">
+    <div style="background-color: rgb(62, 69, 82); padding: 20px; border-radius: 10px; margin-bottom: 40px;">
         <p style="margin-bottom: 0; text-align: center;">Enter network traffic features below to detect potential intrusions. Default values are based on the most common patterns in the training dataset.</p>
     </div>
     """, unsafe_allow_html=True)
@@ -139,7 +139,7 @@ def main():
     # Add visual separator in the spacer column
     with spacer:
         st.markdown("<div style='height: 100px;'></div>", unsafe_allow_html=True)
-        st.markdown("<div style='border-left: 2px solid #e0e0e0; height: 300px; margin-left: 50%;'></div>", unsafe_allow_html=True)
+        st.markdown("<div style='border-left: 2px solid #e0e0e0; margin-left: 50%;'></div>", unsafe_allow_html=True)
     
     # Prediction section
     st.markdown("---")
@@ -167,7 +167,7 @@ def main():
                 prediction_text = 'ANOMALY'
                 confidence = probability[0] * 100
                 st.markdown(f"""
-                <div style="background-color: #ffebee; padding: 20px; border-radius: 10px; border-left: 5px solid #f44336;">
+                <div style="background-color: #ffebee; padding: 20px; border-radius: 10px; border-left: 5px solid #f44336; color: black;">
                     <h3 style="color: #c62828; margin-top: 0;">THREAT DETECTED</h3>
                     <p style="font-size: 18px; margin-bottom: 10px;"><strong>Classification:</strong> {prediction_text}</p>
                     <p style="font-size: 16px; margin-bottom: 0;"><strong>Confidence:</strong> {confidence:.2f}%</p>
@@ -177,7 +177,7 @@ def main():
                 prediction_text = 'NORMAL'
                 confidence = probability[1] * 100
                 st.markdown(f"""
-                <div style="background-color: #e8f5e8; padding: 20px; border-radius: 10px; border-left: 5px solid #4caf50;">
+                <div style="background-color: #e8f5e8; padding: 20px; border-radius: 10px; border-left: 5px solid #4caf50; color: black;">
                     <h3 style="color: #2e7d32; margin-top: 0;">TRAFFIC NORMAL</h3>
                     <p style="font-size: 18px; margin-bottom: 10px;"><strong>Classification:</strong> {prediction_text}</p>
                     <p style="font-size: 16px; margin-bottom: 0;"><strong>Confidence:</strong> {confidence:.2f}%</p>
