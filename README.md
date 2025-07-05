@@ -14,12 +14,12 @@ A machine learning-powered web application for real-time network intrusion detec
 - **Real-time Detection**: Instant classification of network traffic as normal or anomalous
 - **User-friendly Interface**: Clean web interface with separate input fields and real-time validation
 - **Visual Results**: Confidence scores, probability breakdown, and color-coded alerts
-- **Easy Setup**: One-click model retraining and preprocessing included
+- **Easy Setup**: One-click model training and preprocessing included
 
 ## Quick Start
 
 ### Prerequisites
-- Python 3.8+
+- Python 3.8+ (Python 3.12+ recommended)
 - pip
 
 ### Installation

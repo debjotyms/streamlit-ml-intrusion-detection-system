@@ -12,7 +12,7 @@ try:
     st.success("✅ Model and encoders loaded successfully!")
 except FileNotFoundError as e:
     st.error(f"❌ Model file not found: {e}")
-    st.info("Please run 'python retrain_model.py' first to create the model files.")
+    st.info("Please run 'python train_model.py' first to create the model files.")
     st.stop()
 
 # Define the list of features

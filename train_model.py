@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Script to retrain the Random Forest model with the 10 features used in main.py
+Script to train the Random Forest model with the 10 features used in main.py
 This resolves the compatibility issue with scikit-learn versions.
 """
 
@@ -62,13 +62,14 @@ def create_dummy_data():
 
 def load_real_data():
     """
-    Try to load real data from the data directory.
+    Try to load real data from the dataset directory.
     If not available, create dummy data.
     """
     try:
         # Try to load training data
-        df = pd.read_csv('data/train.csv')
-        print("Loaded real training data")
+        df = pd.read_csv('dataset/train.csv')
+        print(f"Loaded real training data with shape: {df.shape}")
+        print(f"Columns: {list(df.columns)}")
         return df
     except FileNotFoundError:
         print("Real data not found. Creating dummy data for demonstration.")
@@ -93,6 +94,7 @@ def preprocess_data(df):
             le = LabelEncoder()
             df[col] = le.fit_transform(df[col].astype(str))
             label_encoders[col] = le
+            print(f"Encoded {col}: {len(le.classes_)} classes")
     
     # Encode target variable
     if 'class' in df.columns:
@@ -112,6 +114,7 @@ def preprocess_data(df):
         # Create dummy features for missing ones
         for feature in missing_features:
             df[feature] = 0
+            print(f"Created dummy feature: {feature}")
     
     # Select only the features we need
     X = df[FEATURES].copy()
@@ -216,7 +219,7 @@ def test_model():
         print(f"Sample {i+1}: {data} -> {result}")
 
 if __name__ == "__main__":
-    print("Retraining Random Forest model for intrusion detection...")
+    print("Training Random Forest model for intrusion detection...")
     model, scaler = train_model()
     test_model()
-    print("\nModel retraining completed!")
+    print("\nModel training completed!")

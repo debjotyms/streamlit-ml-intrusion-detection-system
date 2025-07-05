@@ -161,8 +161,6 @@ cython_debug/
 
 # Project-specific files to ignore
 # Old/backup model files (keep only the current working models)
-rf.sav
-target_encoder.sav
 
 # Debug/analysis files (temporary analysis scripts)
 analyze_defaults.py
