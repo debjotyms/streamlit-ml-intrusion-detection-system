@@ -58,7 +58,7 @@ A machine learning-powered web application for real-time network intrusion detec
 
 ## Model Performance
 
-- **Accuracy**: 99.68%
+- **Accuracy**: 95.68%
 - **Algorithm**: Random Forest (100 estimators)
 - **Features**: 10 carefully selected network traffic features
 - **Preprocessing**: SMOTE balancing, StandardScaler normalization
